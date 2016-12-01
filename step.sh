@@ -39,8 +39,10 @@ if [[ "$cordova_command" == *"add" ]]
 then
     if [ ! -z "$(cordova platform ls | awk '/platforms:$/,/^Available/ { print }' | grep "$platform_name")" ]; then
         echo "===> $platform_name is aready installed"
+        exit 0
     fi
-    exit 0
+
+    cordova platform add $platform_name $build_options
 fi
 
 if [ "$cordova_command" == "build" ] ; then
