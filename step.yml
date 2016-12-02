@@ -9,16 +9,11 @@ source_code_url: https://github.com/nhammond101/steps-cordova-ios
 support_url: https://github.com/nhammond101/steps-cordova/issues-ios
 host_os_tags:
   - "macosx"
-project_type_tags:
-  - ios
 type_tags:
   - cordova
 deps:
   brew:
   - name: npm
-is_requires_admin_user: false
-is_always_run: false
-is_skippable: false
 inputs:
   - cordova_dir: "$CORDOVA_APP_PATH"
     opts:
