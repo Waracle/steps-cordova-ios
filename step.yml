@@ -4,9 +4,9 @@ summary: |-
 description: |-
   The Cordova CLI is the main tool to use for the cross-platform workflow
   described in the [Overview](https://cordova.apache.org/docs/en/latest/guide/overview/index.html).
-website: https://github.com/nhammond101/steps-cordova-ios
-source_code_url: https://github.com/nhammond101/steps-cordova-ios
-support_url: https://github.com/nhammond101/steps-cordova/issues-ios
+website: https://github.com/waracle/steps-cordova-ios
+source_code_url: https://github.com/waracle/steps-cordova-ios
+support_url: https://github.com/waracle/steps-cordova-ios/issues
 host_os_tags:
   - "macosx"
 type_tags:
@@ -34,8 +34,9 @@ inputs:
     opts:
       title: "Platform to build."
       description: |-
-        Choose which platform to build your dependencies for.
+        Choose which platform to to run the command for.
       value_options:
+      - android
       - ios
       is_required: true
   - build_options: "--verbose"
